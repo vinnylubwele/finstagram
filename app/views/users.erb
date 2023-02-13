@@ -1,0 +1,12 @@
+<header>
+<h1>Users</h1>
+</header>
+
+<main style+'width: 700px;'>
+<h3>List of users from our Data base </h3>
+<% @users.each do |user| %>
+<img src="<%= user.avatar_url %>" alt="<%= user.username %> "style= 'width: 200px">
+<h2> <%=user.username %></h2>
+<p> <%=user.email%><p>
+<% end %>
+</main>
